@@ -5,11 +5,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="stylesheets/application.css">
-  <title>Document Title</title>
+  <title>Form  Practice</title>
+  <script src="javascripts/index.js"></script>
+  <script src="javascripts/application.js"></script>
 </head>
+
 <body>
-  <h1>Welcome to CS 2350!</h1>
-  
+ 
+  <form>
+    
+    <label for="name-f" >Name</label>
+    <input type="text" id="name-f" name="name-field" placeholder="John Doe">
+    <br>
+
+  <!-- Things that don't work:  -->
+    <!-- <input type="button" onclick="(function(){alert('Please just display, please');})()" id="submit" value="Submit" class="buttons"> -->
+    <!-- <input type="button" onclick="showMessage()" id="submit" value="Submit" class="buttons"> -->
+    <!-- <input type="button" onclick="displayMessage()" id="submit" value="Submit" class="buttons"> -->
+    <!-- <input type="button" onclick="(displayMessage(){alert('End my suffering')})()" id="submit" value="Submit" class="buttons"> -->
+    <!-- <input type="button" onclick="please()" id="submit" value="Submit" class="buttons"  > -->
+
+    <input type="button" onclick="alert('Hello ' + document.getElementById('name-f').value );" id="submit" value="Submit" class="buttons"  >
+
+    <input type="reset" id="reset" class="buttons" >
+
+  </form>
+
+  <script src="javascripts/index.js"></script>
   <script src="javascripts/application.js"></script>
 </body>
 </html>
